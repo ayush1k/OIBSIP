@@ -1,0 +1,88 @@
+.gradient-background {
+    background: linear-gradient(300deg, #000, #040019, #001a02);
+    background-size: 500% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 100px;
+}
+  
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.input , .output {
+    border: 0;
+    box-shadow: 0 0 5px black;
+    margin-top: 20px;
+    height: 50px;   
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.output {
+    background-color: #fff;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 60vh;
+}
+
+.heading {
+    font-family: 'Merriweather', serif;
+    color: #FAF0D7;
+    font-weight: 100;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 100px;
+}
+
+.dropdown {
+    font-family: 'PT Sans', sans-serif;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #FFD9C0;
+}
+
+.from , .to {
+    color: #fff;
+    margin-left: 60px;
+}
+
+#convert-btn {
+    width: 100px;
+    font-family: 'Merriweather', serif;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    background-color: #8CC0DE;
+    border: 0;
+}
+
+#convert-btn:hover {
+    background-color: rgb(30, 75, 102);
+    color: #fff;
+    font-weight: 100;
+}
